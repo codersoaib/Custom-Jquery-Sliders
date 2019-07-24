@@ -1,0 +1,271 @@
+.border_common{
+    border: 3px solid red;
+}
+.color_navbg {
+    background-color: #fff !important;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid red;
+}
+.partition_line{
+    border-left: 1px solid lightgray; 
+}
+
+.partition_line_rt{
+    border-right: 1px solid lightgray; 
+}
+.partition_line_btm{
+    border-bottom: 1px solid lightgray; 
+}
+a{
+    text-decoration: none !important;
+}
+.shadow_container{
+    box-shadow: 0px 5px 10px lightgray;
+    border-radius: 0px 0px 10px 10px;
+}
+/*===========================
+          HOMEPAGE
+=============================*/
+.shadow_container{
+    box-shadow: 0px 5px 10px lightgray;
+    border-radius: 0px 0px 10px 10px;
+}
+.slider_toggle {
+    display: flex;
+    margin-left: 182px;
+    transition: all 3s ease 0s;
+}
+.slider_item {
+    display: block;
+    margin: 0px 40px;
+}
+.slider_box {
+    width: 99%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.live_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 4px solid gray;
+}
+.img_dropdown{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid gray;
+    margin-right: 5px;
+}
+.img_details {
+    width: 500px;
+    height: 300px;
+}
+.prev-btn,.next-btn{
+    position: absolute;
+    cursor: pointer;
+    height:50px;
+}
+.prev-btn {
+    left: 200px;
+    top: 200px;
+    z-index: 1;
+}
+.next-btn {
+    top: 200px;
+    left: 700px;
+}
+.slide_content {
+    background: lightcyan;
+    padding: 10px;border-radius: 0px 0px 10px 10px;
+}
+.loc_text {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+.time_text {
+    font-weight: 200;
+    color: gray;
+}
+
+
+
+@media(max-width:767px){
+    .partition_line{
+        border-top: 1px solid lightgray;
+        border-left: none;
+    }
+    .live_box {
+        width: 33%;
+        margin-top: 20px !important;
+}
+}
+/* Template 2 css*/
+.up_block-disc {
+    padding: 10px 0px;
+}
+.disc_img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.disc_rtp_img {
+    width: 200px;
+    height: 150px;
+    margin: 0px 20px;
+}
+.icon_open {
+
+    font-size: 20px;
+    margin-left: 50%;
+
+}
+@media(max-width:991px){
+    .prev-btn{
+        left: 0px;
+    }
+    .next-btn{
+        left: 550px;
+    }
+    .slider_toggle{
+        margin-left: 7px;
+    }
+}
+@media(max-width:767px){
+    .prev-btn{
+        left: 0px;
+    }
+    .next-btn {
+        left: 321px;
+    
+    }
+    .slider_toggle{
+        margin-left: -1px;
+    }
+    .img_details {
+        width: 305px;
+        height: 210px;   
+    }
+}
+/*===========================
+          USER PAGE
+=============================*/
+.active_tab {
+    background: #ff9500;
+    border-radius: 5px;
+    color: white !important;
+    padding: 5px 30px !important;
+    font-weight: 600;
+}
+.gen_tab {
+    margin-left: 10px;
+    padding: 5px 30px !important;
+    font-weight: 600;
+}
+.user_img_det {
+    width: 280px;
+    height: 225px;
+}
+.user_inline{
+    display: inline-flex !important;
+}
+.user_block{
+    margin: 10px;
+}
+.user_content {
+    text-align: center;
+    padding: 2px 10px;
+}
+.user_text {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+.user_loc {
+    font-size: 14px;
+    color: gray;
+}
+.social_img{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+@media(max-width:991px){
+    .navbar-nav{
+        flex-direction: row !important;
+    }
+}
+
+/*===========================
+          POST PAGE
+=============================*/
+.post_img_cl1,.post_img_cl2,.post_img_cl3 {
+    padding: 5px;
+}
+.post_img_cl1 {
+    height: 300px;
+    width: 316px;
+}
+.post_img_cl2 {
+    height: 600px;
+    width: 316px;
+}
+.post_img_cl3 {
+    height: 200px;
+    width: 316px;
+}
+
+
+/*===========================
+          DISCOVER PAGE
+=============================*/
+.disc_img_cl1,.disc_img_cl2,.disc_img_cl3 {
+    padding: 5px;
+}
+.disc_img_cl1 {
+    height: 180px;
+    width: 263px;
+}
+.disc_img_cl2 {
+    height: 360px;
+    width: 263px;
+}
+.disc_img_cl3 {
+    height: 120px;
+    width: 263px;
+}
+
+/*===========================
+          UPLOAD PAGE
+=============================*/
+
+.icon_search{
+    color: gray;
+    position: absolute;
+    right: 200px;
+    font-size: 20px;
+}
+.upload_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid gray;
+    margin-right: 10px;
+}
+.user_nametext {
+    font-weight: 600;
+    font-size: 20px;
+}
+.used_idtext {
+    font-weight: 200;
+    font-size: 16px;
+    color: gray;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>Image Slider with content</title>
+    
+</head>
+<body>
+    <div class="container shadow_container mt-4">
+         <div class="row justify-content-center">
+                <div class="col-lg-10  col-md-10 col-xs-12 mt-2">
+                    <div class="row">
+                        <div class="slider_box mt-4 mb-4">
+                            <img src="left-arrow.png" alt="" class="con-btn prev-btn">
+                            <div class="slider_toggle">
+                                <div class="slider_item item1">
+                                    <div class="slide_img">
+                                        <img class="img_details" src="live one.jpg" alt="">
+                                    </div>
+                                    <div class="slide_content">
+                                        <img class="live_img" src="live four.jpg" alt="">
+                                        <p class="loc_text">Amberville - Laxim<br><span class="time_text">8 hours ago</span></p>
+                                        <i class="fas fa-ellipsis-h icon_open"></i>
+                                    </div>
+                                </div>
+                                <div class="slider_item item1">
+                                    <div class="slide_img">
+                                        <img class="img_details" src="live two.jpg" alt="">
+                                    </div>
+                                    <div class="slide_content">
+                                        <img class="live_img" src="live five.jpg" alt="">
+                                        <p class="loc_text">Amberville - Laxim<br><span class="time_text">8 hours ago</span></p>
+                                        <i class="fas fa-ellipsis-h icon_open"></i>
+                                    </div>
+                                </div>
+                                <div class="slider_item item1">
+                                    <div class="slide_img">
+                                        <img class="img_details" src="live three.jpg" alt="">
+                                    </div>
+                                    <div class="slide_content">
+                                        <img class="live_img" src="live one.jpg" alt="">
+                                        <p class="loc_text">Amberville - Laxim<br><span class="time_text">8 hours ago</span></p>
+                                        <i class="fas fa-ellipsis-h icon_open"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="right-arrow.png" alt="" class="con-btn next-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script>
+        $(function(){
+            if($(window).width() > 767){
+            var elemCount = 3;
+            var current = 3;
+            var elemWidth =580;
+            var move = 0;
+            $('.prev-btn').click(function(){
+                if(current < elemCount){
+                    $('.slider_toggle').toggleClass('move');
+                    move -= elemWidth;
+                    $('.slider_toggle').css('transform','translateX(-'+move+'px)');
+                    current++;
+                }
+            });
+            $('.next-btn').click(function(){
+                if(current > 0){
+                    $('.slider_toggle').toggleClass('move');
+                    move += elemWidth;
+                    current--;
+                    $('.slider_toggle').css('transform','translateX(-'+move+'px)');
+                }
+            })
+            }else{
+                var elemCount = 3;
+            var current = 3;
+            var elemWidth =390;
+            var move = 0;
+            $('.prev-btn').click(function(){
+                if(current < elemCount){
+                    $('.slider_toggle').toggleClass('move');
+                    move -= elemWidth;
+                    $('.slider_toggle').css('transform','translateX(-'+move+'px)');
+                    current++;
+                }
+            });
+            $('.next-btn').click(function(){
+                if(current > 0){
+                    $('.slider_toggle').toggleClass('move');
+                    move += elemWidth;
+                    current--;
+                    $('.slider_toggle').css('transform','translateX(-'+move+'px)');
+                }
+            })
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
